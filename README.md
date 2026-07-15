@@ -7,11 +7,11 @@ This platform acts as a unified hub for **Students**, **Recruiters**, and **Admi
 ---
 
 ## 🛠️ Technological Stack
-*   **Language:** Java (JDK 17 or higher)
-*   **GUI Framework:** Java Swing
-*   **Design & Theme:** FlatLaf (specifically `FlatMacDarkLaf` for macOS-inspired dark mode styling)
-*   **Database:** MySQL Server (Port `3306`)
-*   **Build System:** Maven (for dependency resolution: MySQL Connector, FlatLaf)
+*   **Language:** Java (JDK 17 or higher).
+*   **GUI Framework:** Java Swing.
+*   **Design & Theme:** FlatLaf (specifically `FlatMacDarkLaf` for macOS-inspired dark mode styling).
+*   **Database:** MySQL Server (Port `3306`).
+*   **Build System:** Maven (for dependency resolution: MySQL Connector, FlatLaf).
 
 ---
 
