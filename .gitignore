@@ -3,3 +3,5 @@ target/
 db.properties
 .vscode/
 *.log
+maven.zip
+maven_bin/
