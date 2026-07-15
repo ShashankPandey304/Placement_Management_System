@@ -18,39 +18,39 @@ This platform acts as a unified hub for **Students**, **Recruiters**, and **Admi
 ## 💡 Integrated Data Structures and Algorithms (DSA)
 This project is designed to demonstrate how core computer science data structures and algorithms optimize operations in a real-world enterprise pipeline:
 
-### 1. Trie (Prefix Tree) — *Shivam*
+### 1. Trie (Prefix Tree) 
 *   **Usage:** Quick Company Search (Trie autocomplete in Companies tab).
 *   **Explanation:** Company names are loaded into a character-linked Trie prefix tree. When the admin searches for a prefix (e.g., "G"), the Trie scans down the prefix path and returns matching results (e.g., "Google") in **O(L)** time complexity, where $L$ is the length of the query string.
 
-### 2. Binary Search Tree (BST) — *Shivam*
+### 2. Binary Search Tree (BST) 
 *   **Usage:** CGPA Indexing and Range Search (Students tab).
 *   **Explanation:** Students are indexed in a Binary Search Tree using their CGPA as the key. This allows the system to run **O(log N)** range filters (e.g., show all students with a CGPA between 8.5 and 10.0). It also implements node deletion (handling leaf nodes, single-child, and double-child cases) to temporarily hide records.
 
-### 3. HashMap — *Ayush*
+### 3. HashMap
 *   **Usage:** O(1) Constant Time Lookup by Student ID.
 *   **Explanation:** To instantly verify credentials and retrieve profiles without scanning the SQL database continuously, student objects are indexed in a Java `HashMap`. This achieves **O(1) average constant-time complexity** retrieval.
 
-### 4. Merge Sort — *Ayush*
+### 4. Merge Sort 
 *   **Usage:** Leaderboard Generation.
 *   **Explanation:** To generate an academic leaderboard of eligible students, the system implements a custom divide-and-conquer **Merge Sort** utility. It orders records in **O(N log N)** time complexity, which is stable and optimal for larger datasets.
 
-### 5. Doubly Linked List (DLL) — *Shashank*
+### 5. Doubly Linked List (DLL) 
 *   **Usage:** Bidirectional Drive Browsing (Drives tab).
 *   **Explanation:** Active company drives are loaded into a Doubly Linked List. The administrator can traverse the drives sequentially using "Next Node" and "Prev Node" pointers, enabling fast cache navigation without repeated SQL query latency.
 
-### 6. Stack — *Shashank*
+### 6. Stack 
 *   **Usage:** Undo Application Status Changes (Applications tab).
 *   **Explanation:** History changes are tracked using an `UndoStack` (`java.util.Stack`). When an administrator updates a status, the change is pushed onto the stack. Pressing "Undo Last Change" pops the action off the stack and rolls back the database status instantly.
 
-### 7. FIFO Queue — *Shashank*
+### 7. FIFO Queue 
 *   **Usage:** Pending Application Approval Backlog (Applications tab).
 *   **Explanation:** Incoming applications are queued in a First-In, First-Out (FIFO) queue backlog. The approval pipeline processes candidates in the exact order they applied, ensuring fairness.
 
-### 8. Adjacency List Graph & BFS — *Ayush*
+### 8. Adjacency List Graph & BFS 
 *   **Usage:** Overlapping Placements Network Mapping.
 *   **Explanation:** Students and companies form a graph structure represented via an Adjacency List. Running a **Breadth-First Search (BFS)** starting from a student node traverses the network to list all connected corporate partners and groups related students with overlapping application interests.
 
-### 9. Singly Linked List (SLL) — *Shashank*
+### 9. Singly Linked List (SLL) 
 *   **Usage:** Candidate Application History Timeline.
 *   **Explanation:** Every time a candidate's application status updates (e.g., `applied` -> `shortlisted` -> `interview_scheduled`), a transition node is appended to a Singly Linked List. This forms a sequential timeline displayed on the student's dashboard.
 
